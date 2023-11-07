@@ -1,0 +1,55 @@
+.recherche-affiliation {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #e7e7e7;
+}
+
+.affiliation-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.affiliation-item {
+    border-radius: 8px;
+    background: linear-gradient(
+    0deg,
+    rgba(255, 153, 153, 0.08) 0%,
+    rgba(255, 255, 255, 0.08) 100%
+    );
+    margin-bottom: 20px;
+    padding: 20px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.affiliation-item:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.affiliation-name, h3 {
+    color: #e64444;
+    margin-top: 0;
+}
+
+.publications, .authors {
+    border-left: 5px solid #eee;
+    margin-top: 15px;
+    padding: 10px 15px;
+    border-radius: 0 8px 8px 0;
+}
+
+.publications-list, .authors-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.publication-item, .author-item {
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.publication-item:last-child, .author-item:last-child {
+    border-bottom: none;
+}
+

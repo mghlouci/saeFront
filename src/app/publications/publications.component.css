@@ -1,0 +1,51 @@
+.publications {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 350px;
+  }
+
+  .publications h2 {
+    color: #e64444;
+    text-align: center;
+    font-family: monospace;
+    margin-bottom: 200px;
+    font-size: xx-large;
+  }
+  
+  .publications form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .publications input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    transition: border-color 0.3s;
+  }
+  
+
+  .publications input[type="text"]:hover,
+  .publications input[type="text"]:focus {
+    border-color: #007bff;
+  }
+  
+
+  .publications button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 20%;
+    align-self: center;
+  }
+  
+  .publications button:hover {
+    background-color: #0056b3;
+  }

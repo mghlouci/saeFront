@@ -1,0 +1,7 @@
+<div class="publications">
+  <h2>Rechercher le titre d'une publication</h2>
+    <form (ngSubmit)="onSearch()">
+      <input type="text" [(ngModel)]="searchTerm" name="searchTerm" placeholder="Entrer le nom d'une publication">
+      <button type="submit">Rechercher</button>
+    </form>
+  </div>

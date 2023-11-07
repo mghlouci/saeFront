@@ -1,0 +1,51 @@
+.affiliation {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 350px;
+  }
+
+  .affiliation h2 {
+    color: #e64444;
+    text-align: center;
+    font-family: monospace;
+    margin-bottom: 200px;
+    font-size: xx-large;
+  }
+  
+  .affiliation form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .affiliation input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    transition: border-color 0.3s;
+  }
+  
+
+  .affiliation input[type="text"]:hover,
+  .affiliation input[type="text"]:focus {
+    border-color: #007bff;
+  }
+  
+
+  .affiliation button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 20%;
+    align-self: center;
+  }
+  
+  .affiliation button:hover {
+    background-color: #0056b3;
+  }

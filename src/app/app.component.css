@@ -1,0 +1,13 @@
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .content {
+    flex: 0 1 auto;
+    position: relative;
+    overflow-y: auto;
+  }
+  

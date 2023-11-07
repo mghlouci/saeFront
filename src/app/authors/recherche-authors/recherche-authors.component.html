@@ -1,0 +1,29 @@
+<div class="recherche-authors">
+    <ul class="authors-list">
+        <li class="author-item" *ngFor="let a of author">
+            <h2 class="author-name">{{a.name}} </h2>
+            <h2 *ngIf="affiliation.get(a.affiliation)">{{affiliation.get(a.affiliation).name}} </h2>
+            <div class="coauthors">
+                <h3>Liste des coauteurs</h3>
+                <ul class="coauthors-list">
+                    <li class="coauthor-item" *ngFor="let b of coauthor.get(a.id)">
+                        {{b.name}}
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="publications">
+                <h3>Liste des publications</h3>
+                <ul class="publications-list">
+                    <li class="publication-item" *ngFor="let c of publications.get(a.id)">
+                        {{c.title}}
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</div>
+
+
+
+

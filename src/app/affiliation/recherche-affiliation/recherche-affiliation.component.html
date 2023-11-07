@@ -1,0 +1,25 @@
+<div class="recherche-affiliation">
+    <ul class="affiliation-list">
+        <li class="affiliation-item" *ngFor="let a of affiliation">
+            <h2 class="affiliation-name">{{a.name}}</h2>
+            
+            <div class="publications">
+                <h3>Liste des publications</h3>
+                <ul class="publications-list">
+                    <li class="publication-item" *ngFor="let b of publications.get(a.idaff)">
+                        {{b.title}}
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="authors">
+                <h3>Liste des auteurs</h3>
+                <ul class="authors-list">
+                    <li class="author-item" *ngFor="let c of authors.get(a.idaff)">
+                        {{c.name}}
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</div>

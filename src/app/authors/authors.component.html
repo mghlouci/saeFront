@@ -1,0 +1,7 @@
+<div class="authors">
+  <h2>Rechercher le nom d'un auteur</h2>
+  <form (ngSubmit)="onSearch()">
+    <input type="text" [(ngModel)]="searchTerm" name="searchTerm" placeholder="Entrer le nom d'un auteur">
+    <button type="submit">Rechercher</button>
+  </form>
+</div>
