@@ -1,0 +1,27 @@
+<div class="graph-authors">
+
+    
+
+    <div class="left-side">
+
+        <h1>Pagerank general</h1>
+        <h2>{{author.name}}  pagerank : {{pagerank.get(author.id).pagerankpoids}}</h2>
+        <li *ngFor="let c of coauthor">
+            {{c.name}} <br>pagerank : <!-- {{pagerank.get(c.id).pagerankpoids-->
+        </li>
+        
+      </div>
+    
+      <div class="right-side">
+        <h1>Pagerank affiliation</h1>
+        <h2>{{author.name}} pagerank : {{pagerank.get(author.id).pagerankpoidsaffiliation}}</h2>
+        <li *ngFor="let c of coauthorByaff">
+            <span *ngIf="c.id!==author.id">
+                {{c.name}} <br>pagerank : <!-- {{pagerank.get(c.id).pagerankpoidsaffiliation-->
+            </span>
+        </li> 
+        
+      </div>
+
+</div>
+

@@ -49,9 +49,13 @@
 .coauthor-item, .publication-item {
     padding: 5px 0;
     border-bottom: 1px solid #eee;
+    color: #e7e7e7;
 }
 
 .coauthor-item:last-child, .publication-item:last-child {
     border-bottom: none;
 }
 
+a{
+    all:initial;
+}

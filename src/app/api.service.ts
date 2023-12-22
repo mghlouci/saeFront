@@ -18,7 +18,7 @@ export class ApiService {
     return this.httpClient.get(this.API_URL+"/authors/"+req)
   }
 
-  getCoAuthor(id:string){
+  getCoAuthor(id:string|null){
     return this.httpClient.get(this.API_URL+"/authors/"+id+"/coauthors")
   }
 
@@ -38,13 +38,24 @@ export class ApiService {
     return this.httpClient.get(this.API_URL+"/affiliation/"+id+"/authors")
   }
 
-
   getPublicationstfidf(req:string){
     return this.httpClient.get(this.API_URL+"/publications/"+req)
   }
 
   getAffiById(id:string){
     return this.httpClient.get(this.API_URL+"/affiliation/getaffi/"+id)
+  }
+
+  getAuthorById(id:string|null){
+    return this.httpClient.get(this.API_URL+"/authors/"+id+"/authors")
+  }
+
+  getPageRank(id:string|null){
+    return this.httpClient.get(this.API_URL+"/authors/"+id+"/pagerank")
+  }
+
+  getCoAuthorByAff(idAff:string|null){
+    return this.httpClient.get(this.API_URL+"/authors/"+idAff+"/coauthorsbyaff")
   }
 
 }

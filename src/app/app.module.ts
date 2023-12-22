@@ -13,6 +13,8 @@ import { AffiliationComponent } from './affiliation/affiliation.component';
 import { PublicationsComponent } from './publications/publications.component';
 import { RecherchePublicationsComponent } from './publications/recherche-publications/recherche-publications.component';
 import { RechercheAffiliationComponent } from './affiliation/recherche-affiliation/recherche-affiliation.component';
+import { GrapheAuthorsComponent } from './authors/graphe-authors/graphe-authors.component';
+import { NgxGraphModule } from '@swimlane/ngx-graph';
 
 
 
@@ -27,13 +29,15 @@ import { RechercheAffiliationComponent } from './affiliation/recherche-affiliati
     AffiliationComponent,
     PublicationsComponent,
     RecherchePublicationsComponent,
-    RechercheAffiliationComponent
+    RechercheAffiliationComponent,
+    GrapheAuthorsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxGraphModule
   ],
   providers: [],
   bootstrap: [AppComponent]
